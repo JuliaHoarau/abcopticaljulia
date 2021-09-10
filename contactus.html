@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Optical</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html"); //set the path to your header file
+            $("#footer").load("footer.html"); // set the path to your footer file
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="contact-container">
+            <h1>Connect With Us</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore qui eveniet, pariatur deserunt et
+                minima.
+            </p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="Your phone number">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Your email">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Subject name">
+                            </div>
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" id="submit-btn">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>support@abcoptical.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td> 07 3256 710</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td> Shop 36, Level 1, Myer Center, Brisbane City<br>
+                                QLD 4000</td>
+                        </tr>
+                        <td>Opening hours</td>
+                        <td> Mon – Thurs: 9am - 5.30pm <br>
+                            Fri: 9am - 9pm <br>
+                            Sat: 9am - 5pm <br>
+                            Sun: 10am - 5pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+</html>

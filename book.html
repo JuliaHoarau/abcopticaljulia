@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Optical</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html"); //set the path to your header file
+            $("#footer").load("footer.html"); // set the path to your footer file
+        });
+    </script>
+
+</head>
+
+<div id="header"></div>
+
+<body>
+
+    <main>
+
+
+        <div class="booking">
+            <h2>Book an eye test</h2>
+            <table class="table">
+                <thead>
+                    <th>Optician</th>
+                    <th>Morning</th>
+                    <th>Afternoon</th>
+                    <th>Evening</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Optician">Lily Smith</td>
+                        <td data-label="Morning">8:00</td>
+                        <td data-label="Afternoon">12:00</td>
+                        <td data-label="Evening">5pm</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Optician">John Black</td>
+                        <td data-label="Morning">8:00</td>
+                        <td data-label="Afternoon">12:00</td>
+                        <td data-label="Evening">5pm</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Optician">Dan Ferguson</td>
+                        <td data-label="Morning">8:00</td>
+                        <td data-label="Afternoon">12:00</td>
+                        <td data-label="Evening">5pm</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Optician">Jack Doe</td>
+                        <td data-label="Morning">8:00</td>
+                        <td data-label="Afternoon">12:00</td>
+                        <td data-label="Evening">5pm</td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Optician">Samantha Grant</td>
+                        <td data-label="Morning">8:00</td>
+                        <td data-label="Afternoon">12:00</td>
+                        <td data-label="Evening">5pm</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <button class="btn">Book Appointment</button>
+        </div>
+
+
+    </main>
+
+
+
+    <div id="footer"></div>
+</body>
+
+</html>

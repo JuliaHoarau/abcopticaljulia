@@ -1,0 +1,584 @@
+:root {
+    --accent-color: #d62246;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(2 13 31);
+    color: white;
+
+}
+
+main {
+
+    padding-top: 250px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+
+}
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/header-image.jpg");
+    background-size: cover;
+    display: block;
+    min-height: 192px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+.foreground {
+    backdrop-filter: blur(3px);
+    min-height: 15vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+
+}
+
+
+.header-logo {
+    width: 150px;
+    margin: 20px 0 5px 45px;
+
+}
+
+
+.mobile-nav {
+    display: none;
+}
+
+#mobile-menu,
+#hamburger {
+    display: none;
+    color: white;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    background: linear-gradient(rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .6));
+    overflow: hidden;
+
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 18px;
+    position: relative;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d62246;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+
+
+.main-section {
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+
+}
+
+.main-section p {
+    margin: 50px;
+}
+
+.btn {
+    padding: 15px 32px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(2 13 31);
+    color: #fff;
+    border: 2px solid #d62246;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: #d62246;
+}
+
+.main-section h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #d62246;
+    text-decoration-skip-ink: none;
+}
+
+.main-section p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.img-caption {
+    display: inline-block;
+    padding: 50px;
+}
+
+.img-caption img {
+    margin: auto;
+    width: 200px;
+}
+
+.img-caption h3 {
+    color: #fff;
+}
+
+/* FOOTER */
+
+.contact-icon {
+    flex-direction: row;
+}
+
+
+footer p {
+    color: black;
+    font-size: 15px;
+}
+
+footer {
+    display: fixed;
+    height: 200px;
+    flex-direction: row;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+footer .footer-section {
+    width: 400px;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.contact img {
+    width: 20px;
+}
+
+.footer-bottom {
+    color: white;
+    margin: 15px;
+    text-align: center;
+}
+
+footer h3 {
+    color: black
+}
+
+
+
+
+
+/* BLOG PAGE */
+
+
+.blog-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.blog-aside {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.blog-section img {
+    width: 300px;
+}
+
+.blog-content {
+    width: 600px;
+    margin: 50px;
+}
+
+.blog-content h1 {
+    font-size: 2rem;
+}
+
+/* CONTACT US */
+.contact-left h3 {
+    color: #b41938;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-container h1 {
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    background: #fff;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #d62246;
+    color: #fff;
+}
+
+.contact-container p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-box label {
+    margin-bottom: 6px;
+    display: block;
+    color: #b41938;
+}
+
+#submit-btn {
+    background: #d62246;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+
+
+tr td {
+    padding-top: 20px;
+}
+
+/* BOOK APPOINTMENT */
+
+
+.booking {
+    display: block;
+    text-align: center;
+}
+
+.booking>h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #d62246;
+    text-decoration-skip-ink: none;
+
+}
+
+.booking .table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+
+.booking td,
+.booking th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: white;
+}
+
+.booking tbody {
+    color: white;
+}
+
+.booking td:hover {
+    background-color: #d62246;
+}
+
+.booking th {
+    background-color: #d62246;
+}
+
+.booking>.btn {
+    margin-top: 100px;
+}
+
+/* QUOTE */
+
+.quote-container {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.quote-container p {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+@media (max-width: 568px) {
+
+    main {
+        padding-top: 100px;
+        min-height: 100vh;
+    }
+
+    .background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/header-image.jpg");
+        background-size: cover;
+        display: block;
+        min-height: 100px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        z-index: 1;
+
+
+    }
+
+    .foreground {
+        height: 100px;
+    }
+
+    .header-logo {
+        width: 20%;
+
+    }
+
+    nav {
+        visibility: collapse;
+    }
+
+    .mobile-nav {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        background: #050A30;
+        border-top: 1px solid #fff;
+        padding: 10px;
+        display: none;
+        position: absolute;
+    }
+
+
+    ul>li>a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #mobile-menu:checked+.mobile-nav {
+        display: block;
+    }
+
+    .main-section h2 {
+        font-size: 2rem;
+    }
+
+    .content-box {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+
+    }
+
+    .content-right,
+    .content-left {
+        flex-basis: none;
+    }
+
+    .contact-box {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .material-icons:active {
+        background-image: url("images/opticallogo.png")
+    }
+
+    .booking thead {
+        display: none;
+
+    }
+
+    .booking td {
+        display: block;
+
+    }
+
+    .booking td:nth-child(1) {
+        background-color: #d62246;
+    }
+
+
+    .booking td:nth-child(1)::before {
+        content: "Optician:"
+    }
+
+    .booking td::before {
+
+        margin-right: 0.5rem;
+    }
+
+    .contact-left {
+        flex-basis: none;
+        padding: 30px 30px;
+    }
+
+    .contact-right {
+        flex-basis: none;
+        padding: 10px;
+    }
+
+    .contact-right tr {
+        font-size: 13px;
+    }
+
+    .contact-left label {
+        visibility: collapse;
+    }
+
+
+    .input-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .input-row .input-group {
+        flex-basis: 45%;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        padding-bottom: 5px;
+    }
+
+    footer p {
+        color: black;
+        font-size: 15px;
+    }
+
+    footer {
+        display: fixed;
+        height: 200px;
+        flex-direction: column;
+
+        background-color: #fff;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+
+    }
+
+    footer .footer-section {
+        width: 400px;
+    }
+
+    footer .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+
+    .quote-container {
+        margin-bottom: 30px;
+    }
+
+
+}
